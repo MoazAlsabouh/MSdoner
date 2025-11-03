@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة طعام - Doner Hatay Uslu</title>
+    
+
+<script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* إضافة خط Inter الافتراضي */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            /* توجيه النص للمحاذاة لليمين للعناصر التركية */
+            direction: ltr; 
+        }
+        .rtl-title {
+            direction: rtl; /* إجبار العنوان ليكون من اليمين لليسار */
+        }
+        .menu-logo {
+            max-height: 100px; /* لتحديد أقصى ارتفاع للوجو */
+            width: auto; /* للحفاظ على نسبة العرض إلى الارتفاع */
+            margin: 0 auto; /* للتوسيط */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto max-w-4xl p-4">
+        
+        
+
+<header class="text-center my-8">
+            <img src="https://i.ibb.co/L5w11f1/Ms-Doner-Hatay-Uslu-Logo.jpg" alt="Doner Hatay Uslu Logo" class="menu-logo mb-4">
+            <p class="text-2xl text-gray-600 mt-2 rtl-title">قائمة الطعام</p>
+        </header>
+
+        
+
+<!-- 
+  *** التغيير هنا ***
+  أضفنا "items-start" لمنع العناصر من التمدد عموديًا 
+-->
+        <main class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 items-start">
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer relative" onclick="toggleIngredients(this)">
+                
+
+<div class="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full z-10 rtl-title">خصم!</div>
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Tavuk+Dürüm" alt="Orjinal Soğanlı Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Orjinal Soğanlı</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (80 gr)</p>
+                    <div class="flex items-baseline mt-2">
+                        <p class="text-lg font-semibold text-red-600">120 TL</p>
+                        <p class="text-sm text-gray-500 line-through mr-2">140 TL</p>
+                    </div>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج</li>
+                            <li>خبز التورتيلا</li>
+                            <li>بصل</li>
+                            <li>طماطم</li>
+                            <li>صوص خاص</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Tavuk+Dürüm" alt="Normal Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Normal</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (80 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">140 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج</li>
+                            <li>خبز التورتيلا</li>
+                            <li>طماطم</li>
+                            <li>خس</li>
+                            <li>صوص ثوم</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=BBQ+Dürüm" alt="Barbekü Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Barbekü</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (80 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">160 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج</li>
+                            <li>خبز التورتيلا</li>
+                            <li>صوص باربكيو</li>
+                            <li>بصل مقلي</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Kaşarlı+Dürüm" alt="Kaşarlı Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Kaşarlı</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (80 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">180 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج</li>
+                            <li>خبز التورتيلا</li>
+                            <li>جبنة قشقوان (كاشار)</li>
+                            <li>فلفل أخضر</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Çedarlı+Dürüm" alt="Çedarlı Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Çedarlı</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (80 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">180 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج</li>
+                            <li>خبز التورتيلا</li>
+                            <li>جبنة شيدر</li>
+                            <li>هلابينو</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Zurna+Dürüm" alt="Zurna Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Zurna</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (125 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">190 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج (كمية أكبر)</li>
+                            <li>خبز كبير</li>
+                            <li>بطاطا مقلية</li>
+                            <li>مخلل</li>
+                            <li>صوص خاص</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Soba+Borusu" alt="Soba Borusu Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Soba Borusu</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (150 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">200 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج (كمية كبيرة)</li>
+                            <li>خبز صاج كبير</li>
+                            <li>خضروات مشوية</li>
+                            <li>صلصة حارة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            
+
+<div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:scale-105 cursor-pointer" onclick="toggleIngredients(this)">
+                <img src="https://placehold.co/300x200/F3E2C9/6B4F4F?text=Porsiyon" alt="Porsiyon Tavuk Dürüm" class="w-full h-32 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg text-gray-900">Porsiyon</h3>
+                    <p class="text-sm text-gray-600">Tavuk Dürüm (200 gr)</p>
+                    <p class="text-lg font-semibold text-red-600 mt-2">200 TL</p>
+                    
+
+<div class="ingredients mt-3 pt-3 border-t border-gray-200 hidden">
+                        <p class="text-sm font-semibold text-gray-700 rtl-title">المكونات:</p>
+                        <ul class="list-disc list-inside text-sm text-gray-600 rtl-title">
+                            <li>دجاج (قطع)</li>
+                            <li>أرز</li>
+                            <li>بطاطا مقلية</li>
+                            <li>سلطة</li>
+                            <li>خبز</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        
+
+<footer class="text-center my-8">
+            
+
+<div class="bg-white shadow-lg rounded-lg p-4 max-w-sm mx-auto">
+                <h4 class="text-xl font-bold text-gray-800">ALO PAKET</h4>
+                
+
+<a href="tel:03782272288" class="text-2xl font-bold text-red-600 tracking-wider block mt-2 hover:text-red-700 transition-colors">
+                    0 378 227 22 88
+                </a>
+            </div>
+            
+            <p class="text-gray-500 mt-6 rtl-title">قائمة طعام رقمية</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleIngredients(element) {
+            const ingredientsDiv = element.querySelector('.ingredients');
+            ingredientsDiv.classList.toggle('hidden');
+        }
+    </script>
+
+</body>
+</html>
+
